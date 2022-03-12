@@ -420,3 +420,25 @@ img {
     width: 100%;
   }
 }
+@media only screen and (max-width: 280px) {
+  .bootstrapContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .allRechargeOptions,
+  .eachTypeCardConatiner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .rechargeOptionDiv {
+    width: auto;
+  }
+  .userIdInput,
+  .emailInput {
+    width: 100%;
+  }
+  .innerFooterDiv > * {
+    width: 100%;
+  }
+}
