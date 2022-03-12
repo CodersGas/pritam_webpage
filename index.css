@@ -1,0 +1,422 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img {
+  width: 100%;
+}
+.boldText {
+  font-weight: 500;
+}
+.leftGridContentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contentContainerDiv {
+  background-color: #4527a0;
+  color: #fff;
+  padding: 1rem;
+}
+.leftGridContentDiv p:first-child {
+  font-size: 1.2rem;
+}
+.centerBodyContent {
+  background-color: #4527a0;
+  padding: 2rem 1rem;
+}
+.allOptionsContainer {
+  color: #fff;
+}
+.allBlocksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blockStyle {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.blockContent {
+  padding: 0 1.5rem 1.5rem;
+}
+.blockNumber {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  border: 4px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.4rem;
+  background-color: #4527a0;
+  top: -20px;
+  left: 20px;
+}
+.blockHeading {
+  margin-left: 72px;
+}
+.allRechargeOptions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.rechargeOptionDiv {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  width: 130px;
+}
+.rechargeOptionDiv:hover,
+.rechargeOptionDivSelected,
+.eachPaymentDiv:hover,
+.selectedPaymentDiv {
+  background-color: #e3f2fd;
+}
+.userIdInput,
+.emailInput {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e8e8e8;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+.suggestion {
+  font-size: 0.6875rem;
+  color: #7a7a7a;
+  font-style: italic;
+}
+.userIdDiv {
+  margin-top: 1.5rem;
+}
+.logoIcon {
+  width: 124px;
+}
+.allPaymentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.eachPaymentDiv {
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.buyDiv {
+  padding: 1rem;
+}
+.emailInput {
+  margin-top: 1rem;
+}
+.buyBottomDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.checkboxInputDiv {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.buyButton {
+  width: 200px;
+  background-color: #4527a0;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.rechargeAmt {
+  font-weight: 500;
+}
+.paymentSubtext {
+  position: absolute;
+  bottom: 0;
+  background-color: #e0e0e0;
+  width: 100%;
+  left: 0;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.customerContentOne {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.customerContentOne p:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.customerContentTwo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.eachQuestionDiv {
+  width: 300px;
+  padding: 2rem;
+  background-color: rgba(243, 229, 245, 0.60);
+  border-radius: 0.4rem;
+}
+.questionTitle {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.answerDiv {
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.footerMainDiv {
+  padding: 1rem 0;
+}
+.innerFooterDiv {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.innerFooterDiv > * {
+  flex: 1;
+}
+.footerDivs {
+  padding: 1rem 0;
+}
+.footerDivs .footerHeading {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.footerDivs .footerButton {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.6rem;
+  border: 1px solid #757575;
+  border-radius: 0.8rem;
+}
+.socialIconsDivFooter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.companyAddress {
+  font-size: 0.8rem;
+}
+.copyrightDiv {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
+.copyrightDiv > a,
+.cardGrid a {
+  text-decoration: none;
+  color: #000;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+.navLogo {
+  width: 9rem;
+}
+.searchIcon {
+  cursor: pointer;
+}
+.helpImageDiv {
+  display: none;
+  position: absolute;
+  top: 60%;
+  z-index: 99;
+}
+.inputHelpDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+.helpIcon {
+  color: #4527a0;
+  cursor: pointer;
+}
+.helpIcon:hover ~ .helpImageDiv {
+  display: block
+}
+.cardsContainerDiv {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.eachTypeCardConatiner {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: 16px;
+}
+.cardsContainerDiv h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.homePageGrid {
+  background-color: #4527a0;
+  color: #fff;
+  padding: 1rem;
+}
+.cardDiv {
+  width: 100%;
+  background-color: #4527a0;
+  color: #fff;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.cardDiv img {
+  width: 100%;
+  max-height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.cardTitleDiv {
+  padding: 1rem;
+  text-align: center;
+  background-color: #7986cb;
+  height: 100%;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-weight: 500;
+}
+.paymentReceiptDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+.eachPaymentRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #757575;
+  border-bottom-style: dashed;
+  padding-bottom: 1rem;
+}
+.errorMsg {
+  color: #f44336;
+  font-size: 0.7rem;
+  margin: 0.1rem 0 0.5rem;
+}
+.navLeftSide {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menuIcon {
+  cursor: pointer;
+}
+.menuContainerDiv {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.eachMenuItem {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1rem;
+}
+.eachMenuItem:hover {
+  background-color: #e0e0e0;
+}
+.footerContainerDiv {
+  background-color: #ffff00;
+}
+
+.bootstrapContainer {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .bootstrapContainer {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bootstrapContainer {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bootstrapContainer {
+    width: 1170px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .bootstrapContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .allRechargeOptions,
+  .eachTypeCardConatiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+  .rechargeOptionDiv {
+    width: auto;
+  }
+  .userIdInput,
+  .emailInput {
+    width: 100%;
+  }
+}
