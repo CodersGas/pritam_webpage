@@ -78,7 +78,7 @@ allRechargeOptions.forEach((option) => {
     });
     
     const idValue = option.getAttribute("id");
-    amount = rechargeOptionsArray.filter((recharge) => recharge.text === idValue).price;
+    amount = rechargeOptionsArray.filter((recharge) => recharge.text === idValue)[0].price;
     rechargeAmountElements.forEach(element => {
       element.innerHTML = amount;
     });
