@@ -78,9 +78,9 @@ allRechargeOptions.forEach((option) => {
     });
     
     const idValue = option.getAttribute("id");
-    amount = rechargeOptionsArray.filter((recharge) => recharge.text === idValue);
+    amount = rechargeOptionsArray.filter((recharge) => recharge.text === idValue).price;
     rechargeAmountElements.forEach(element => {
-      element.innerHTML = amount[0].price;
+      element.innerHTML = amount;
     });
     document.getElementById(idValue).classList.add("rechargeOptionDivSelected");
     rechargeOption = idValue;
@@ -125,5 +125,5 @@ function handleBuyButton() {
     emailErrorElement.style.display = "none";
   }
 
-  window.open(`https://test.com?am=${amount[0].price.replace("₹", "")}&email=${userEmail}&mode=${paymentOption}`, "_blank")
+  window.open(`https://test.com?am=${amount.replace("₹", "")}&email=${userEmail}&mode=${paymentOption}`, "_blank")
 }
