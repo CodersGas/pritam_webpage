@@ -15,6 +15,9 @@ html,body {
   margin:0;
   padding:0;
 }
+a {
+  text-decoration: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -76,7 +79,7 @@ img {
   left: 20px;
 }
 .blockHeading {
-  margin-left: 72px;
+  margin-left: 80px;
 }
 .allRechargeOptions {
   display: flex;
@@ -148,6 +151,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .checkboxInputDiv {
   display: flex;
@@ -175,6 +179,7 @@ img {
   left: 0;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  display: none;
 }
 .customerContentOne {
   display: flex;
@@ -182,10 +187,21 @@ img {
   gap: 1rem;
   text-align: center;
   margin: 1.5rem 0;
+  padding: 0 1rem;
 }
 .customerContentOne p:first-child {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.paymentContainer {
+  display: flex;
+  gap: 4rem;
+}
+.paymentLeftSide {
+  flex: 1 1 0;
+}
+.paymentRightSide {
+  flex: 2.5 1 0;
 }
 .customerContentTwo {
   display: flex;
@@ -287,6 +303,8 @@ img {
 .helpIcon {
   color: #4527a0;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
 }
 .helpIcon:hover ~ .helpImageDiv {
   display: block
@@ -355,6 +373,7 @@ img {
   color: #f44336;
   font-size: 0.7rem;
   margin: 0.1rem 0 0.5rem;
+  display: none;
 }
 .navLeftSide {
   display: flex;
@@ -365,10 +384,17 @@ img {
   cursor: pointer;
 }
 .menuContainerDiv {
+  display: none;
+}
+.visibleMenuDiv {
   width: 250px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
 }
 .eachMenuItem {
   font-size: 1rem;
@@ -419,6 +445,9 @@ img {
   .emailInput {
     width: 100%;
   }
+  .paymentContainer {
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (max-width: 280px) {
   .bootstrapContainer {
@@ -440,5 +469,8 @@ img {
   }
   .innerFooterDiv > * {
     width: 100%;
+  }
+  .paymentContainer {
+    flex-wrap: wrap;
   }
 }

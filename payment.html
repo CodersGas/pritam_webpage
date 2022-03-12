@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Payment</title>
+  <link rel="stylesheet" href="./index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- NAVIGATION -->
+  <div class="mainNavDiv bootstrapContainer">
+    <div class="navBar">
+      <div class="navLeftSide">
+        <img src="./images/menu.png" alt="menu" class="menuIcon" />
+        <img src="https://cdn1.codashop.com/S/content/mobile/images/codashop-logo-new-2x.png" class="navLogo">
+      </div>
+      <div class="navRightSide">
+        <img src="./images/search.svg" alt="search" class="searchIcon" />
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div>
+    <div>
+      <div class="contentContainerDiv">
+        <div class="bootstrapContainer paymentContainer">
+          <div class="paymentLeftSide">
+            <img src="https://cdn1.codashop.com/S/content/common/images/mno/BGIM_Banner.jpg" alt="BGIM banner">
+            <div class="leftGridContentDiv">
+              <p>BATTLEGROUNDS MOBILE INDIA</p>
+              <p>Cashback Offers: <a style="color: #b2ebf2"
+                  href="https://news.codashop.com/in/top-up-your-favourite-games-apps-on-codashop-and-avail-exciting-cashback-offers/?_ga=2.93714782.237443839.1646553474-345728412.1646553474">Terms
+                  &amp; Conditions</a></p>
+              <p>Buy BATTLEGROUNDS MOBILE INDIA UC in seconds! Just enter your BGMI user ID, select the value of UC
+                you wish to purchase, complete the payment, and the UC will be added immediately to your BATTLEGROUNDS
+                MOBILE INDIA account.</p>
+              <p>Pay with Paytm, Mobikwik, UPI, FreeCharge, Payzapp, Net Banking, Simpl, LazyPay, and Card Payment.
+                There's no registration, or login required. Purchase BGMI UC today and enjoy a seamless top up
+                experience only at Codashop!</p>
+              <p><b>Reminder:</b></p>
+              <p>Please restart the game app after you complete the payment to receive the UC.</p>
+              <p>This page is only for BATTLEGROUNDS MOBILE INDIA top-up. Users who are playing games other than
+                BATTLEGROUNDS MOBILE INDIA can not receive UC after purchased, so these users please do not top-up
+                here.</p>
+              <p>Download &amp; play BATTLEGROUNDS MOBILE INDIA today!</p>
+              <div><a
+                  href="https://play.google.com/store/apps/details?id=com.pubg.imobile&amp;referrer=adjust_reftag%3DcOA0SLvi1YrS8%26utm_source%3D210618_BGMI%2BLaunching_HP"><img
+                    src="https://d1qgcmfii0ptfa.cloudfront.net/S/content/mobile/images/google_play_coda.png"
+                    alt="Play store link" class="logoIcon"></a></div>
+            </div>
+          </div>
+          <div class="paymentRightSide">
+            <div class="allBlocksContainer">
+              <div class="blockStyle" id="userIdBlock">
+                <h2><span class="blockNumber">1</span><span class="blockHeading">Enter User ID</span></h2>
+                <div class="userIdDiv blockContent">
+                  <div class="inputHelpDiv">
+                    <input placeholder="Enter User Id" type="number" class="userIdInput">
+                    <!-- question mark icon -->
+                    <img src="./images/help.png" alt="help" class="helpIcon" />
+                    <div class="helpImageDiv">
+                      <img src="https://cdn1.codashop.com/S/content/common/images/helpers/256.png" class="helpImage">
+                    </div>
+                  </div>
+                  <p class="errorMsg idError">Please enter user id</p>
+                  <p class="suggestion">To find your User ID, tap your Avatar on the top left corner of the Lobby
+                    screen. Your User ID is shown below your nickname (example: 551234567890).</p>
+                </div>
+              </div>
+              <div class="blockStyle">
+                <h2><span class="blockNumber">2</span><span class="blockHeading">Select Recharge</span></h2>
+                <div class="allRechargeOptions blockContent">
+                  <div id="60 UC" class="rechargeOptionDiv rechargeOptionDivSelected"><span>60 UC</span></div>
+                  <div id="300 + 25 UC" class="rechargeOptionDiv"><span>300 + 25 UC</span></div>
+                  <div id="600 + 60 UC" class="rechargeOptionDiv"><span>600 + 60 UC</span></div>
+                  <div id="1500 + 300 UC" class="rechargeOptionDiv"><span>1500 + 300 UC</span></div>
+                  <div id="3000 + 850 UC" class="rechargeOptionDiv"><span>3000 + 850 UC</span></div>
+                  <div id="6000 + 2100 UC" class="rechargeOptionDiv"><span>6000 + 2100 UC</span></div>
+                </div>
+              </div>
+              <div class="blockStyle">
+                <h2><span class="blockNumber">3</span><span class="blockHeading">Select Payment</span></h2>
+                <div class="allPaymentsContainer blockContent">
+                  <div class="eachPaymentDiv" id="paytm">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/PAYTM_WALLET_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using Paytm Wallet</p>
+                  </div>
+                  <div class="eachPaymentDiv" id="upi">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/PAYTM_BANK_TRANSFER_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using UPI</p>
+                  </div>
+                  <div class="eachPaymentDiv" id="mobiwik">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/MOBIKWIK_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using Mobiwik</p>
+                  </div>
+                  <div class="eachPaymentDiv" id="netBanking">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/Net Banking_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using Net Banking</p>
+                  </div>
+                  <div class="eachPaymentDiv" id="freecharge">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/FREECHARGE_IN_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using FreeCharge</p>
+                  </div>
+                  <div class="eachPaymentDiv" id="lazypay">
+                    <img src="https://cdn1.codashop.com/S/content/common/images/mno/LAZYPAY_CHNL_LOGO.png"
+                      class="logoIcon">
+                    <div>
+                      <p>PRICE</p>
+                      <span class="rechargeAmt">₹75.00</span>
+                    </div>
+                    <p class="paymentSubtext">Pay using Lazypay</p>
+                  </div>
+                </div>
+              </div>
+              <div class="blockStyle" id="userEmailBlock">
+                <h2><span class="blockNumber">4</span><span class="blockHeading">Buy!</span></h2>
+                <div class="buyDiv">
+                  <p>OPTIONAL: If you would like a receipt of the purchase by email, please enter an email address</p>
+                  <div class="inputBuyDiv">
+                    <input placeholder="E-mail address" class="emailInput" type="email">
+                    <p class="errorMsg emailError" >Please enter user id</p>
+                    <div class="buyBottomDiv">
+                      <div class="checkboxInputDiv"><input name="rememberMe" type="checkbox"><label
+                          for="rememberMe">Remember me</label></div>
+                      <button class="buyButton" onclick="handleBuyButton()" type="button">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customerContentOne">
+      <p>Convenient &amp; affordable BGMI UC Purchase only at Codashop India</p>
+      <p>You are seconds away from buying UC for BATTLEGROUNDS MOBILE INDIA. With UC you can purchase crates, outfits,
+        gun skins, companions, emotes, accessories, treasures, Battle Pass, vehicle skins, and more!</p>
+      <p>Look no further than Codashop and enjoy an easy, safe and hassle-free top up experience. We are trusted by
+        gamers &amp; app users in India. <a href="https://www.codashop.com/en-in/battlegrounds-mobile-india#top">Click
+          here to get started.</a></p>
+      <p>Why choose Codashop for BATTLEGROUNDS MOBILE INDIA top up?</p>
+      <p class="boldText">Easy &amp; Fast</p>
+      <p>It only takes a few seconds to complete a purchase on Codashop.</p>
+      <p class="boldText">Guaranteed delivery</p>
+      <p>BGMI UC are delivered straight to your in-game account.</p>
+      <p class="boldText">Convenient payment methods</p>
+      <p>Pay using the most popular payment methods in India</p>
+      <p class="boldText">World-class customer support</p>
+      <p>Our support team are always ready to help 24/7. Send us a message through this form and we will get right back
+        to you!</p>
+      <p class="boldText">Exciting promotions</p>
+      <p>Never miss out on awesome deals, giveaways and more only at Codashop!</p>
+    </div>
+    <div class="customerContentTwo">
+      <div class="eachQuestionDiv">
+        <p class="questionTitle">How to buy BATTLEGROUNDS MOBILE (BGMI) UC?</p>
+        <div class="answerDiv">
+          <ul>
+            <li>Enter your User ID</li>
+            <li>Select the amount of UC you wish to purchase.</li>
+            <li>Choose your preferred mode of payment.</li>
+            <li>Review your order and complete the transaction.</li>
+          </ul>
+        </div>
+        <div>As soon as payment has been completed, UC will be instantly credited to your BATTLEGROUNDS MOBILE INDIA
+          account. Click here to buy BGMI UC today!</div>
+      </div>
+      <div class="eachQuestionDiv">
+        <p class="questionTitle">What is UC in BATTLEGROUNDS MOBILE INDIA?</p>
+        <div class="answerDiv">UC or Unknown Cash is the premium in-game currency of BATTLEGROUNDS MOBILE INDIA. With UC
+          (Unknown Cash) you can purchase crates, outfits, gun skins, companions, emotes, accessories, treasures, Battle
+          Pass, vehicle skins, and more!</div>
+        <div></div>
+      </div>
+      <div class="eachQuestionDiv">
+        <p class="questionTitle">Get up to date news &amp; the best deals for BATTLEGROUNDS MOBILE INDIA</p>
+        <div class="answerDiv">
+          <p>Subscribe to the Codashop blog and follow us on social media for the latest BGMI news, exciting offers and
+            fun events.</p>
+          <a href="https://www.facebook.com/Codashop.IN/">Follow us on Facebook</a><a
+            href="https://www.instagram.com/codashop.in/">Follow us on Instagram</a>
+        </div>
+        <div>
+          <p>Join the 40K+ strong <a
+              href="https://community.codashop.com/in?_ga=2.190271848.237443839.1646553474-345728412.1646553474">Codaclub
+              Community</a> and join exclusive events or gain new friends and dominate the gaming world together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div>
+    <div class="footerContainerDiv">
+      <div class="bootstrapContainer">
+        <div>
+          <div>
+            <div class="innerFooterDiv">
+              <div class="footerDivs">
+                <p class="footerHeading">Need Help?</p>
+                <button class="footerButton" type="button">Contact Us</button>
+              </div>
+              <div class="footerDivs">
+                <p class="footerHeading">Country</p>
+                <button class="footerButton" type="button">भारत (India)</button>
+              </div>
+              <div class="footerDivs">
+                <p class="footerHeading">Stay updated with us:</p>
+                <div class="socialIconsDivFooter">
+                  <a target="_blank" href="https://www.facebook.com/Codashop.IN/">
+                    <img src="./images/facebook.svg" alt="facebook" />
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/codashop.in/">
+                    <img src="./images/instagram.svg" alt="instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="footerDivs">
+                <p class="footerHeading">Registered Address</p>
+                <span class="companyAddress">Coda Payments India Private Limited, New No. 19, Playground
+                  View
+                  Street, Nandhanam Extension, Nandhanam Chennai 600035. You may also contact us via
+                  support.in@codapayments.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bootstrapContainer">
+      <div>
+        <div class="copyrightDiv">
+          <p>© Copyright Coda Payments</p>
+          <a>
+            <p>Marketing &amp; Partnerships</p>
+          </a>
+          <a>
+            <p>For Game Publishers</p>
+          </a>
+          <a>
+            <p>Terms &amp; Conditions</p>
+          </a>
+          <a <p>Privacy Policy</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menuContainerDiv" id="menuDiv">
+    <div class="eachMenuItem">
+      <p>About Us</p>
+    </div>
+    <div class="eachMenuItem">
+      <p>Contact</p>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
